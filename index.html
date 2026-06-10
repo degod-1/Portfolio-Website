@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atri Chattopadhyay — Product Manager</title>
+    <meta name="description" content="Personal portfolio of Atri Chattopadhyay, an aspiring Product Manager and General Secretary of the Technical Board at IIT Guwahati. Specializing in ML recommendation, product execution, and digital transformation.">
+    <meta name="author" content="Atri Chattopadhyay">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Atri Chattopadhyay — Product Manager">
+    <meta property="og:description" content="Portfolio of Atri Chattopadhyay, General Secretary, Technical Board at IIT Guwahati. Aspiring Product Manager.">
+    <meta property="og:url" content="https://github.com/AtriChatterjee1">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600&family=Geist:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <a href="#/overview" class="branding-link">
+                    <h1 class="nav-title">Atri Chattopadhyay</h1>
+                </a>
+                <p class="nav-subtitle">Product Manager</p>
+                <div class="nav-location">IIT Guwahati · EEE '26</div>
+            </div>
+
+            <!-- Main Navigation Tabs -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#/overview" class="nav-item active" data-tab="overview" id="nav-overview">
+                            <span class="nav-icon">○</span>
+                            <span class="nav-text">Overview</span>
+                            <span class="nav-shortcut">⌥1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/experience" class="nav-item" data-tab="experience" id="nav-experience">
+                            <span class="nav-icon">◇</span>
+                            <span class="nav-text">Experience</span>
+                            <span class="nav-shortcut">⌥2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/projects" class="nav-item" data-tab="projects" id="nav-projects">
+                            <span class="nav-icon">□</span>
+                            <span class="nav-text">Projects</span>
+                            <span class="nav-shortcut">⌥3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/leadership" class="nav-item" data-tab="leadership" id="nav-leadership">
+                            <span class="nav-icon">△</span>
+                            <span class="nav-text">Leadership</span>
+                            <span class="nav-shortcut">⌥4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/achievements" class="nav-item" data-tab="achievements" id="nav-achievements">
+                            <span class="nav-icon">☆</span>
+                            <span class="nav-text">Achievements</span>
+                            <span class="nav-shortcut">⌥5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/stack" class="nav-item" data-tab="stack" id="nav-stack">
+                            <span class="nav-icon">⚬</span>
+                            <span class="nav-text">Stack & Courses</span>
+                            <span class="nav-shortcut">⌥6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/extracurricular" class="nav-item" data-tab="extracurricular" id="nav-extracurricular">
+                            <span class="nav-icon">⬡</span>
+                            <span class="nav-text">Extra-curriculars</span>
+                            <span class="nav-shortcut">⌥7</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Social Links & Utility -->
+            <div class="sidebar-footer">
+                <div class="contact-links">
+                    <a href="https://github.com/AtriChatterjee1" target="_blank" rel="noopener" class="contact-link" id="link-github">
+                        <span>GitHub</span>
+                        <span class="arrow-up-right">↗</span>
+                    </a>
+                    <a href="https://linkedin.com/in/atri-chattopadhyay" target="_blank" rel="noopener" class="contact-link" id="link-linkedin">
+                        <span>LinkedIn</span>
+                        <span class="arrow-up-right">↗</span>
+                    </a>
+                    <a href="mailto:atrichatterjee18@gmail.com" class="contact-link" id="link-email">
+                        <span>Email</span>
+                        <span class="arrow-up-right">↗</span>
+                    </a>
+                </div>
+
+                <div class="sidebar-utils">
+                    <button class="cmd-trigger-btn" id="cmd-trigger" aria-label="Open Search Menu">
+                        <span class="cmd-icon">/</span>
+                        <span class="cmd-text">Search</span>
+                    </button>
+                    
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                        <span class="theme-icon-dark">☾</span>
+                        <span class="theme-icon-light">☀</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="app-viewport">
+            <!-- Mobile Header -->
+            <header class="mobile-nav-bar">
+                <span class="mobile-branding">Atri Chattopadhyay</span>
+                <div class="mobile-nav-actions">
+                    <button id="mobile-menu-toggle" aria-label="Toggle menu" class="mobile-menu-btn">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="mobile-menu-overlay" id="mobile-menu">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#/overview" class="mobile-nav-item active" data-tab="overview">Overview</a></li>
+                        <li><a href="#/experience" class="mobile-nav-item" data-tab="experience">Experience</a></li>
+                        <li><a href="#/projects" class="mobile-nav-item" data-tab="projects">Projects</a></li>
+                        <li><a href="#/leadership" class="mobile-nav-item" data-tab="leadership">Leadership</a></li>
+                        <li><a href="#/achievements" class="mobile-nav-item" data-tab="achievements">Achievements</a></li>
+                        <li><a href="#/stack" class="mobile-nav-item" data-tab="stack">Stack & Courses</a></li>
+                        <li><a href="#/extracurricular" class="mobile-nav-item" data-tab="extracurricular">Extra-curriculars</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact">
+                    <a href="https://github.com/AtriChatterjee1" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/atri-chattopadhyay" target="_blank">LinkedIn</a>
+                    <a href="mailto:atrichatterjee18@gmail.com">Email</a>
+                </div>
+            </div>
+
+            <!-- Dynamic Views -->
+            <div class="content-container">
+                <!-- Overview View -->
+                <section id="view-overview" class="tab-view active">
+                    <header class="view-header animate-fade-in">
+                        <h2 class="view-title">Overview</h2>
+                        <p class="view-description">Shipping products at the intersection of <span class="editorial-italic">technology</span>, <span class="editorial-italic">data</span>, and <span class="editorial-italic">user experience</span>.</p>
+                    </header>
+
+                    <div class="view-content animate-fade-in delay-1">
+                        <div class="overview-grid">
+                            <div class="intro-block">
+                                <h3 class="hero-statement">
+                                    I am an <span class="editorial-italic"><u>Engineer</u></span> who translates unstructured challenges into clean, high-impact <span class="editorial-italic">product decisions</span>.
+                                </h3>
+                                <p class="hero-body">
+                                    I spent four years at <strong>IIT Guwahati</strong> learning how to build things people actually use. Turns out, understanding systems — how they break, how they scale, how they optimize — translates remarkably well to business. At <strong>Meesho</strong>, I'm applying that same instinct to one of India's most exciting growth stories.<br>
+                                    <br>
+                                    At IIT Guwahati, I had the privilege of serving as the <strong>General Secretary of the Technical Board</strong> — leading the institute's technical ecosystem, driving innovation initiatives, and representing over 8000 students. Before that, as <strong>Secretary of the Coding Club</strong>, I mentored 100+ juniors in Machine Learning and WEB3 technologies.
+                                </p>
+                            </div>
+                            <div class="portrait-block">
+                                <div class="portrait-wrapper">
+                                    <a href="https://linkedin.com/in/atri-chattopadhyay" target="_blank" rel="noopener" class="portrait-link-overlay">
+                                        <img src="assets/images/atri_portrait.jpg" alt="Atri Chattopadhyay" class="portrait-img">
+                                        <div class="portrait-overlay-badge">
+                                            <span>LinkedIn</span>
+                                            <span class="arrow-up-right">↗</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-summary">
+                            <div class="summary-col">
+                                <h4 class="col-title">Focus areas</h4>
+                                <ul class="list-minimal">
+                                    <li>Data-driven product strategy</li>
+                                    <li>Product Design & Prototyping</li>
+                                    <li>ML/AI system implementations</li>
+                                    <li>Growth Analytics & Insights</li>
+                                </ul>
+                            </div>
+                            <div class="summary-col">
+                                <h4 class="col-title">Education</h4>
+                                <div class="edu-item-row">
+                                    <img src="assets/images/iitglogo.png" alt="IITG Logo" class="edu-logo-img">
+                                    <div class="edu-item">
+                                        <div class="edu-meta">IIT Guwahati · B.Tech EEE</div>
+                                        <div class="edu-date">2022 — 2026</div>
+                                        <div class="edu-grade">GPA: 7.79/10.0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Logo Wall -->
+                        <div class="overview-brands-section">
+                            <h4 class="col-title">Worked With</h4>
+                            <div class="brands-strip">
+                                <div class="brand-logo-item">
+                                    <img src="assets/images/Meesho_logo.png" alt="Meesho Logo" class="brand-logo-img">
+                                    <span>Meesho</span>
+                                </div>
+                                <div class="brand-logo-item">
+                                    <img src="assets/images/metasky-logo.jpg" alt="Metasky Logo" class="brand-logo-img">
+                                    <span>Metasky</span>
+                                </div>
+                                <div class="brand-logo-item">
+                                    <img src="assets/images/unsnarl-logo.jpeg" alt="UNSNARL Logo" class="brand-logo-img">
+                                    <span>UNSNARL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience View -->
+                <section id="view-experience" class="tab-view">
+                    <header class="view-header">
+                        <h2 class="view-title">Experience</h2>
+                        <!-- <p class="view-description">Translating metrics into growth initiatives.</p> -->
+                    </header>
+
+                    <div class="view-content">
+                        <div class="spec-list">
+                            <!-- Metasky -->
+                            <article class="spec-item" id="exp-metasky">
+                                <div class="spec-meta">
+                                    <div class="spec-org-row">
+                                        <img src="assets/images/metasky-logo.jpg" alt="Metasky Logo" class="comp-logo-img">
+                                        <h3 class="spec-title">Metasky</h3>
+                                    </div>
+                                    <span class="spec-role">Business Development & Marketing Intern</span>
+                                    <span class="spec-date">Jan 2024 — Aug 2024</span>
+                                    <span class="spec-loc">Remote</span>
+                                </div>
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Growth Automation</h4>
+                                        <p>Designed and automated data-driven D2C campaigns utilizing Brevo CRM, optimizing targeting segmentations and user flows. This directly drove <strong>$10k+</strong> in revenue growth.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Marketplace Growth</h4>
+                                        <p>Demonstrated a <strong>250% increase</strong> in marketplace utility metrics by conceiving and executing organic referral loops and tailored influencer marketing pipelines.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Social Engagement</h4>
+                                        <p>Ideated and implemented social growth campaigns across corporate and associate accounts, generating over <strong>800k+ organic impressions and engagements</strong>.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- UNSNARL -->
+                            <article class="spec-item" id="exp-unsnarl">
+                                <div class="spec-meta">
+                                    <div class="spec-org-row">
+                                         <img src="assets/images/unsnarl-logo.jpeg" alt="UNSNARL Logo" class="comp-logo-img">
+                                         <h3 class="spec-title">UNSNARL</h3>
+                                     </div>
+                                    <span class="spec-role">Business Development Executive</span>
+                                    <span class="spec-date">Feb 2023 — Oct 2023</span>
+                                    <span class="spec-loc">Remote</span>
+                                </div>
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Platform Onboarding</h4>
+                                        <p>Managed public relations and spearheaded structured SME merchant onboarding to the Detectbox platform, streamlining validation checkouts to significantly reduce friction and improve partner adoption rate.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Growth Operations</h4>
+                                        <p>Directed the growth vertical. Managed the end-to-end planning, team coordination, and partner alignments for the WEB3-Init event, catering to <strong>1,000+ active attendees</strong> while successfully doubling overall platform engagement levels.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects View (Projects Format) -->
+                <section id="view-projects" class="tab-view">
+                    <header class="view-header">
+                        <h2 class="view-title">Projects</h2>
+                        <!-- <p class="view-description">A breakdown of system designs, execution paths, and shipped features.</p> -->
+                    </header>
+
+                    <div class="view-content">
+                        <div class="spec-list">
+                            <!-- IITG Mess App -->
+                            <article class="spec-item" id="proj-mess-app">
+                                <div class="spec-header-row">
+                                     <div class="spec-meta">
+                                         <h3 class="spec-title">PRJ-01: IITG Mess App</h3>
+                                         <span class="spec-org">Hostel Affairs Board, IIT Guwahati</span>
+                                         <span class="spec-date">Apr 2024 — Sep 2025</span>
+                                     </div>
+                                     <div class="spec-actions">
+                                         <a href="https://play.google.com/store/apps/details?id=in.codingclub.hab&hl=en_IN" target="_blank" rel="noopener" class="btn-action">
+                                             <span>Live App</span>
+                                             <span class="arrow-up-right">↗</span>
+                                         </a>
+                                         <a href="https://tinyurl.com/iitg-mess-app" target="_blank" rel="noopener" class="btn-action">
+                                             <span>Report</span>
+                                             <span class="arrow-up-right">↗</span>
+                                         </a>
+                                     </div>
+                                 </div>
+                                
+                                <div class="spec-grid">
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">8,000+</span>
+                                        <span class="metric-lbl">Active Users</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">25%</span>
+                                        <span class="metric-lbl">Faster Subscriptions</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">15h+</span>
+                                        <span class="metric-lbl">Saved/Month/Hostel</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">40%</span>
+                                        <span class="metric-lbl">Higher Accuracy</span>
+                                    </div>
+                                </div>
+
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Objective</h4>
+                                        <p>Replace paper-based subscription and chaotic manual authentication systems across campus messes with a centralized mobile solution.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Execution & Design</h4>
+                                        <p>Researched end-to-end workflows across <strong>50+ students & staff</strong> to identify 12 friction-heavy pain points. Built 2 detailed user personas (Student, Mess manager) and designed a unified, mobile-first QR code access protocol.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Impact & Metrics</h4>
+                                        <p>Shipped instant QR-based mess check-in. Automated billing reports cut out 15+ hours of administrative work monthly per hostel. Accelerated monthly subscription process speed by 25% and boosted response records accuracy to 40%.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Dream 11 -->
+                            <article class="spec-item" id="proj-dream11">
+                                <div class="spec-header-row">
+                                    <div class="spec-meta">
+                                        <h3 class="spec-title">PRJ-02: Dream 11 Predictor</h3>
+                                        <span class="spec-org">Inter IIT Tech Meet 13.0</span>
+                                        <span class="spec-date">Nov 2024 — Dec 2024</span>
+                                    </div>
+                                    <a href="https://tinyurl.com/dream11-prototype" target="_blank" rel="noopener" class="btn-action">
+                                        <span>Prototype</span>
+                                        <span class="arrow-up-right">↗</span>
+                                    </a>
+                                </div>
+
+                                <div class="spec-grid">
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">35%</span>
+                                        <span class="metric-lbl">Prediction Boost</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">40%</span>
+                                        <span class="metric-lbl">Higher User Trust</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">2x</span>
+                                        <span class="metric-lbl">Faster Team Build</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">84%</span>
+                                        <span class="metric-lbl">User Engagement</span>
+                                    </div>
+                                </div>
+
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Objective</h4>
+                                        <p>Build an intelligent recommendation engine for team building in fantasy sports that balances ML power with explainable UI.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Execution & Design</h4>
+                                        <p>Conducted research with <strong>250+ fantasy players</strong> to isolate complexity and opaque systems as primary barriers. Built <em>DREAM</em>, an ML model incorporating SHAP values for local explainability. Shipped a clean, audio-visual guide flow mapping why a player is recommended.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Impact & Metrics</h4>
+                                        <p>Product delivered a 35% improvement in selection accuracy and lifted user trust scores by 40%. The voice-guided UI streamlined roster creation speed by 2x, capturing 84% active engagement rate in user testing.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- SkillPath -->
+                            <article class="spec-item" id="proj-skillpath">
+                                <div class="spec-header-row">
+                                    <div class="spec-meta">
+                                        <h3 class="spec-title">PRJ-03: SkillPath Platform</h3>
+                                        <span class="spec-org">Coding Club, IIT Guwahati</span>
+                                        <span class="spec-date">Apr 2023 — Apr 2024</span>
+                                    </div>
+                                    <a href="https://tinyurl.com/skillpath-iitg" target="_blank" rel="noopener" class="btn-action">
+                                        <span>Details</span>
+                                        <span class="arrow-up-right">↗</span>
+                                    </a>
+                                </div>
+
+                                <div class="spec-grid">
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">40%</span>
+                                        <span class="metric-lbl">Resolution Speedup</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">12+</span>
+                                        <span class="metric-lbl">Wireframes Created</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">5</span>
+                                        <span class="metric-lbl">Core Metrics Tracked</span>
+                                    </div>
+                                    <div class="spec-metric-card">
+                                        <span class="metric-val">500+</span>
+                                        <span class="metric-lbl">Active Students</span>
+                                    </div>
+                                </div>
+
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Objective</h4>
+                                        <p>Streamline campus-wide Coursera program management and student support ticketing.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Execution & Design</h4>
+                                        <p>Mapped structural requirements for <strong>15+ active courses</strong>. Designed visual information architecture for 10 distinct subject modules, prototyping 12+ layout wireframes. Engineered a custom club analytics dashboard to monitor progress.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Impact & Metrics</h4>
+                                        <p>Reduced average student query resolution times by 40%. The central dashboard helped club admins track 5 key student progress parameters, supporting data-driven decisions for 500+ active learners.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Other Projects -->
+                            <article class="spec-item" id="proj-others">
+                                <div class="spec-meta">
+                                    <h3 class="spec-title">I also know <span style="color: #e06b4e;"> how to code </span></h3>
+                                    <span class="spec-org">Independent Projects</span>
+                                </div>
+                                <div class="spec-body">
+                                     <div class="spec-section">
+                                         <div class="nested-proj-header">
+                                             <h5 class="nested-proj-title">Low Light Image Enhancement</h5>
+                                             <a href="https://github.com/AtriChatterjee1/Low-Light-Image-Enhancement    " target="_blank" rel="noopener" class="btn-action">
+                                                 <span>Link</span>
+                                                 <span class="arrow-up-right">↗</span>
+                                             </a>
+                                         </div>
+                                         <p>Fine-tuned the MIRNet v2 architecture utilizing advanced residual blocks. Achieved a low reconstruction loss score of <strong>0.19</strong>, optimizing computer vision edge processing in degraded environments.</p>
+                                     </div>
+                                     <div class="spec-section">
+                                         <div class="nested-proj-header">
+                                             <h5 class="nested-proj-title">ChainTune Protocol</h5>
+                                             <a href="https://github.com/AtriChatterjee1/ChainTune" target="_blank" rel="noopener" class="btn-action">
+                                                 <span>Link</span>
+                                                 <span class="arrow-up-right">↗</span>
+                                             </a>
+                                         </div>
+                                         <p>Designed a decentralized, on-chain P2P music streaming smart contract protocol. Programmed logic structures rewarding both listener nodes and content creators autonomously, minimizing centralized distributor fees.</p>
+                                     </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leadership View -->
+                <section id="view-leadership" class="tab-view">
+                    <header class="view-header">
+                        <h2 class="view-title">Leadership</h2>
+                        <!-- <p class="view-description">Leading organizational vision, budgets, and cross-domain teams.</p> -->
+                    </header>
+
+                    <div class="view-content">
+                        <div class="spec-list">
+                            <!-- GenSec Tech Board -->
+                            <article class="spec-item" id="lead-gensec">
+                                <div class="spec-header-row">
+                                    <div class="spec-meta">
+                                        <h3 class="spec-title">General Secretary, Technical Board</h3>
+                                        <span class="spec-org">IIT Guwahati</span>
+                                        <span class="spec-date">2025 — 2026</span>
+                                    </div>
+                                    <div class="spec-actions">
+                                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7461696740342145024/" target="_blank" rel="noopener" class="btn-action">
+                                            <span>Report</span>
+                                            <span class="arrow-up-right">↗</span>
+                                        </a>
+                                        <a href="https://www.instagram.com/techboard.iitg/" target="_blank" rel="noopener" class="btn-action">
+                                            <span>Instagram</span>
+                                            <span class="arrow-up-right">↗</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="banner-wrapper">
+                                    <img src="assets/images/leadership_board.jpg" alt="General Secretary, Technical Board IIT Guwahati Contingent Group Photo" class="leadership-banner-img">
+                                </div>
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Building Technical Communities</h4>
+                                        <p>Led 15 specialized technical clubs with a community of <strong>700+ student associates</strong>, coordinating activities across a four-tier organizational structure. Managed an annual budget of over <strong>₹1 crore (10M INR)</strong> to support projects, events, and student initiatives.</p>
+                                    </div>
+
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Scaling Student Engagement</h4>
+                                        <p>Oversaw <strong>90+ technical projects</strong>, <strong>15+ student-led courses</strong>, and <strong>50+ campus-wide events</strong> annually catering to 8000+ students. Launched the <strong>Beyond Classrooms</strong> podcast and newsletter series to strengthen community engagement and showcase student-led innovation.</p>
+                                    </div>
+
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Vision 2030</h4>
+                                        <p>Developed and launched the <strong>Vision 2030</strong> strategy to strengthen IIT Guwahati's performance across <strong>10+ national and international</strong> technical competitions.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Inter IIT Tech Meet</h4>
+                                        <p>Coordinated IIT Guwahati's participation in the <strong>Inter IIT Tech Meet 14.0</strong>, working across teams to streamline planning and execution. Led efforts to secure IIT Guwahati's bid to host the first in-person <strong>Inter IIT Technical Meet</strong> in 2026, creating a platform for greater technical collaboration and visibility.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Secretary Coding Club -->
+                            <article class="spec-item" id="lead-codingclub">
+                                <div class="spec-header-row">
+                                    <div class="spec-meta">
+                                        <h3 class="spec-title">Secretary, Coding Club</h3>
+                                        <span class="spec-org">IIT Guwahati</span>
+                                        <span class="spec-date">2024 — 2025</span>
+                                    </div>
+                                    <div class="spec-actions">
+                                        <a href="https://drive.google.com/file/d/1QyEOReDo3OARtgYmyzwSCrNU5YMK3PUC/view?usp=sharing" target="_blank" rel="noopener" class="btn-action">
+                                            <span>Report</span>
+                                            <span class="arrow-up-right">↗</span>
+                                        </a>
+                                        <a href="https://www.instagram.com/codingclubiitg/" target="_blank" rel="noopener" class="btn-action">
+                                            <span>Instagram</span>
+                                            <span class="arrow-up-right">↗</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="banner-wrapper">
+                                    <img src="assets/images/coding_club_board.jpg" alt="Secretary, Coding Club IIT Guwahati Team Group Photo" class="leadership-banner-img coding-club-banner">
+                                </div>
+                                <div class="spec-body">
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Team Execution</h4>
+                                        <p>Managed a flat organization of 100 project coordinators and 16 operational leads, organizing 30+ regional hackathons and programming workshops, driving a <strong>3x increase</strong> in yearly event participation rates.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Sponsorships & Collaborations</h4>
+                                        <p>Secured corporate and community funding valuations exceeding <strong>INR 400,000+</strong> by organizing partner alignments with industry brands like FOSS India, ICFDR, and Saptang Labs.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Codapeak 2025</h4>
+                                        <p>Served as Convener for the flagship Codapeak event, directing the onboarding and management of 1,500+ active competitors and 50+ expert mentors, yielding a <strong>1.5x year-on-year growth</strong> footprint.</p>
+                                    </div>
+                                    <div class="spec-section">
+                                        <h4 class="spec-subtitle">Ethos Hackathon</h4>
+                                        <p><p>Founded the largest student-organized technical hackathon in North East India, bringing together <strong>2,000+ participants</strong> for a three-day event featuring four innovation tracks and a 24-hour offline hackathon. Simultaneously launched <strong>Aasha</strong>, a grassroots initiative dedicated to experiential STEM education for underprivileged school children in North Assam.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements View -->
+                <section id="view-achievements" class="tab-view">
+                    <header class="view-header">
+                        <h2 class="view-title">Achievements</h2>
+                        <!-- <p class="view-description">Competitive milestones and academic honors.</p> -->
+                    </header>
+
+                    <div class="view-content">
+                        <div class="ach-table-wrapper">
+                            <table class="ach-table">
+                                <thead>
+                                    <tr>
+                                        <th>Host / Event</th>
+                                        <th>Recognition</th>
+                                        <th class="text-right">Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-medium">Tech Mahindra</td>
+                                        <td>Secured <strong class="text-accent">Rank 4 Globally</strong> with Special Mention in the Innovation Track.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Inter IIT Tech Meet</td>
+                                        <td>Received <strong class="text-accent">Bronze Medal</strong> in the Product Development Problem Statement among all 23 IITs.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Amazon</td>
+                                        <td>Awarded <strong class="text-accent">DeepRacer AI/ML Scholarship</strong> | Selected into Amazon ML Summer School 2024.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Kriti Tech Cup</td>
+                                        <td>Received <strong class="text-accent">Gold Medal</strong> in the Optimizing Food Wastage Problem Statement among 13 campus hostels.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Finnovation</td>
+                                        <td>Received <strong class="text-accent">Special Mention</strong> and placed among top 5 out of 170+ teams in NPA detection challenge.</td>
+                                        <td class="text-right font-mono">2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Techevince 10.0</td>
+                                        <td>Awarded <strong class="text-accent">Overall Best & Audience Best Project</strong> among 100+ competing engineering prototypes.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">DecenBuild Hackathon</td>
+                                        <td>Achieved <strong class="text-accent">National Rank 1</strong> out of 1000+ participating national teams.</td>
+                                        <td class="text-right font-mono">2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Zero to One</td>
+                                        <td>Awarded <strong class="text-accent">Honorable Mention</strong> for constructing the product Growth Strategy for ChargeBee.</td>
+                                        <td class="text-right font-mono">2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">BiMonthly Award</td>
+                                        <td>Received the award for <strong class="text-accent">Best Secretary</strong> among all 15 technical clubs for Q1 2024-25.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">JEE Advanced</td>
+                                        <td>Secured a top-tier <strong class="text-accent">All India Rank (AIR) of 1,753</strong>, placing within the top 0.01% of over 200,000 elite candidates nationwide.</td>
+                                        <td class="text-right font-mono">2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stack & Courses View -->
+                <section id="view-stack" class="tab-view">
+                    <header class="view-header">
+                        <h2 class="view-title">Stack & Courses</h2>
+                        <!-- <p class="view-description">Technical toolkits and supporting academic foundations.</p> -->
+                    </header>
+
+                    <div class="view-content">
+                        <div class="stack-grid">
+                            <!-- Technical Skills -->
+                            <div class="stack-card">
+                                <h3 class="stack-card-title">Languages & Web</h3>
+                                <div class="pill-group">
+                                    <span class="tech-pill">C++</span>
+                                    <span class="tech-pill">C</span>
+                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">HTML5</span>
+                                    <span class="tech-pill">CSS3</span>
+                                    <span class="tech-pill">MySQL</span>
+                                    <span class="tech-pill">Git</span>
+                                </div>
+                            </div>
+
+                            <div class="stack-card">
+                                <h3 class="stack-card-title">Data</h3>
+                                <div class="pill-group">
+                                    <span class="tech-pill">NumPy</span>
+                                    <span class="tech-pill">Pandas</span>
+                                    <span class="tech-pill">Matplotlib</span>
+                                    <span class="tech-pill">SeaBorn</span>
+                                    <span class="tech-pill">SHAP</span>
+                                </div>
+                            </div>
+
+                            <div class="stack-card">
+                                <h3 class="stack-card-title">Tools & Design</h3>
+                                <div class="pill-group">
+                                    <span class="tech-pill">Figma</span>
+                                    <span class="tech-pill">Brevo CRM</span>
+                                    <span class="tech-pill">Excel</span>
+                                    <span class="tech-pill">LaTeX</span>
+                                    <span class="tech-pill">PreSet</span>
+                                    <span class="tech-pill">n8n</span>
+                                </div>
+                            </div>
+                            <div class="stack-card">
+                                <h3 class="stack-card-title">Machine Learning & AI</h3>
+                                <div class="pill-group">
+                                    <span class="tech-pill">PyTorch</span>
+                                    <span class="tech-pill">Computer Vision</span>
+                                    <span class="tech-pill">OLlama</span>
+                                    <span class="tech-pill">RAG</span>
+                                    <span class="tech-pill">Agentic AI</span>
+                                    <span class="tech-pill">Transformers</span>
+                                    <span class="tech-pill">LangChain</span>
+                                </div>
+                            </div>
+
+                            <!-- Coursework -->
+                            <div class="stack-card span-all">
+                                <h3 class="stack-card-title">Academic Foundations</h3>
+                                <div class="course-section">
+                                    <h4 class="course-category">Computer Science & AI</h4>
+                                    <p class="course-text"> Hardware Aware Deep Learning, Data Structures and Algorithms ( Lab & Theory) , Computing with Signals, Introduction to Computing ( Lab & Theory) </p>
+                                </div>
+                                <div class="course-section">
+                                    <h4 class="course-category">Mathematics</h4>
+                                    <p class="course-text">Probability and Random Processes, Linear Algebra, Real and Complex Analysis, Multivariate Calculus</p>
+                                </div>
+                                <div class="course-section">
+                                    <h4 class="course-category">MOOCs</h4>
+                                    <p class="course-text">Strategy and Game Theory Management (IIM Ahmedabad),  Deep Learning Specialization (DeepLearning.ai) </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Extra-curriculars View -->
+                <section id="view-extracurricular" class="tab-view">
+                    <header class="view-header animate-fade-in">
+                        <h2 class="view-title">Extra-curriculars</h2>
+                        <p class="view-description">Competitive milestones and sports representation outside of product management and engineering.</p>
+                    </header>
+
+                    <div class="view-content animate-fade-in delay-1">
+                        <div class="ach-table-wrapper" id="ext-chess">
+                            <table class="ach-table">
+                                <thead>
+                                    <tr>
+                                        <th>Event / Host</th>
+                                        <th>Recognition / Achievement</th>
+                                        <th class="text-right">Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-medium">World Youth Championship</td>
+                                        <td>Represented <strong class="text-accent">India</strong> on the global stage.</td>
+                                        <td class="text-right font-mono">2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">Western Asia Rapid Chess Championship</td>
+                                        <td>Secured <strong class="text-accent">Rank 6 Globally</strong> in rapid play.</td>
+                                        <td class="text-right font-mono">2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">National School Chess Championship</td>
+                                        <td>Placed <strong class="text-accent">Rank 8</strong> nationwide.</td>
+                                        <td class="text-right font-mono">2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">SGFI School State Championship</td>
+                                        <td>Crowned <strong class="text-accent">U-19 State Champion</strong>.</td>
+                                        <td class="text-right font-mono">2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">SGFI School District Championship</td>
+                                        <td>Crowned <strong class="text-accent">U-19 District Champion</strong>.</td>
+                                        <td class="text-right font-mono">2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-medium">56th Inter IIT Sports Meet</td>
+                                        <td>Awarded <strong class="text-accent">Best Player (Chess)</strong> representing IIT Guwahati.</td>
+                                        <td class="text-right font-mono">2024</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Command Palette Overlay -->
+    <div class="cmd-palette-backdrop" id="cmd-palette">
+        <div class="cmd-palette-dialog">
+            <div class="cmd-palette-header">
+                <span class="cmd-palette-search-icon">🔍</span>
+                <input type="text" id="cmd-input" class="cmd-palette-input" placeholder="Type a command or search portfolio... (e.g. 'mess', 'ml', 'gpa')" autocomplete="off" spellcheck="false">
+                <button class="cmd-palette-close" id="cmd-close-btn" aria-label="Close palette">Esc</button>
+            </div>
+            <div class="cmd-palette-body">
+                <div class="cmd-palette-suggestions" id="cmd-suggestions">
+                    <div class="suggestions-label">Navigation</div>
+                    <!-- Navigation entries populated dynamically -->
+                </div>
+                <div class="cmd-palette-results hidden" id="cmd-results">
+                    <!-- Search results populated dynamically -->
+                </div>
+            </div>
+            <div class="cmd-palette-footer">
+                <div class="kbd-helper"><kbd>↑</kbd><kbd>↓</kbd> to navigate</div>
+                <div class="kbd-helper"><kbd>↵</kbd> to select</div>
+                <div class="kbd-helper"><kbd>esc</kbd> to close</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Grid Lines (Subtle Linear Visual Element) -->
+    <div class="grid-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
