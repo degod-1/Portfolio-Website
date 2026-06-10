@@ -1,7 +1,6 @@
-# Premium Minimalist Product Manager Portfolio
+# Portfolio
 
-A highly minimal, production-grade personal portfolio website for Atri Chattopadhyay, styled as a modern software product (inspired by Linear, Raycast, Vercel, and Anthropic) rather than a traditional resume website.
-
+The following contains all the commands for the website and how to add new sections, if anybody wishes to clone.
 ---
 
 - **Command Palette (`Cmd+K` / `Ctrl+K`):** A custom, lightweight keyboard-driven search console built from scratch in vanilla JS. Instantly searches, indexes, and filters through experience history, projects, and skills. Includes a system action command to toggle light/dark modes.
