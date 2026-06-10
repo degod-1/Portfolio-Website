@@ -1,6 +1,4 @@
 # Portfolio
-
-The following contains all the commands for the website and how to add new sections, if anybody wishes to clone.
 ---
 
 - **Command Palette (`Cmd+K` / `Ctrl+K`):** A custom, lightweight keyboard-driven search console built from scratch in vanilla JS. Instantly searches, indexes, and filters through experience history, projects, and skills. Includes a system action command to toggle light/dark modes.
